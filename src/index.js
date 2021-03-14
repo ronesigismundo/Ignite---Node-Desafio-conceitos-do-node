@@ -78,7 +78,6 @@ app.put('/todos/:id', checksExistsUserAccount, (request, response) => {
   const {title, deadline} = request.body;
   const {id} = request.params;
   const { todos } = request.user;
-  console.log(id);
 
   let todo = todos.find(todo => todo.id === id )
 
